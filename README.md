@@ -1,6 +1,6 @@
 # SageMaker Workshop
 
-  **Description:** This workshop was created to walk users through the end-to-end process and considerations for utilizing SageMaker for Machine Learning. The workshop focuses on a usecase of predicting whether a transaction is likely to be a recurring payment (i.e. subscription, membership).  
+  **Description:** This workshop was created to walk users through the end-to-end process and considerations for utilizing SageMaker for Machine Learning.   
   
  The workshop is broken into 4 Labs with an additional step for lab setup: 
  
