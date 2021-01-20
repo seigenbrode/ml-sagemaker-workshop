@@ -49,8 +49,16 @@
    * [Basics of Jupyter Notebooks](https://towardsdatascience.com/a-beginners-tutorial-to-jupyter-notebooks-1b2f8705888a)
  
  ## Lab 1: Data Exploration & Feature Engineering  
-   
- From within the notebook instance we created in Lab Setup above:
+
+ In this lab, we will be using a modified version of the SageMaker Example Notebook for a direct marketing use case  where we want to target customers that are most likely to enroll in a term deposit after one or more phone calls.  
+
+ **Learning Objective:** The goal of this lab is to apply common techniques in:
+
+   * exploring & understanding your data
+   * identifying & transforming features that are most predictive to our machine learning problem
+   * evaluating the performance of a model
+ 
+ **Lab Steps:** From within the notebook instance we created in Lab Setup above:
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab1**
@@ -62,9 +70,23 @@
  
  ## Lab 2: Data Processing at Scale using SageMaker Processing
    
- This is a two part lab to showcase using Amazon SageMaker Processing in two different scenarios.
+ In these labs, we will be using modified versions of SageMaker Example Notebooks focused on SageMaker Processing to transform data and evaluate our models. The ML use cases for both labs is predicting whether a census responders has an income greater or less than $50,000.  This is a two part lab to showcase using Amazon SageMaker Processing in two different scenarios. 
  
- For Part 1:  We will utilize SageMaker Processing for data pre-processing using the SKLearnProcessor as well as for model evalution after training our model.  
+ In the first scenario (Part 1), we will use the SageMaker built-in support for sklearn to preprocess our data for training and evaluate our model against a hold out dataset. This lab will also show how to use ScriptProcessor to run any custom script in a processing container.  
+
+ ![Lab2](./images/Lab2Part1.png)
+ 
+
+ ![Lab2](./images/Lab2Part1b.png)
+ 
+ 
+ In the second scenario (Part 2), we will explore a custom DASK container that allows us to perform distributed processing on more than one Processing Instance. 
+
+ **Learning Objective:** The goal of this lab is to learn a scalable option for data pre-processing.
+ 
+ **Lab Steps:**
+
+ For Part 1:  We will utilize SageMaker Processing for data pre-processing using the SKLearnProcessor as well as for perform model evalution after training our model.  
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab2**
@@ -82,7 +104,11 @@ For Part 2: We will also create our own custom processor using ScriptProcessor t
  
  ## Lab 3: Build, Train, and Deploy using SageMaker Built-In-Algorithm
    
- From within the notebook instance we created in Lab Setup above:
+ In this lab, we will use a SageMaker Built-In Algorithm (XGBoost) to build, train and deploy a model using SageMaker. The ML use case for this scenario is predicting whether a customer will churn (binary classification). This lab includes data exploration, feature engineering, model training, compiling a model as an option prior to deploying a model to a hosted endpoint, and finally evaluating the performance of that model.
+ 
+ **Learning Objective:** Learn available SageMaker options for training and hosting models as well as get additional practice in data pre-processing and feature engineering. 
+ 
+ **Lab Steps:** From within the notebook instance we created in Lab Setup above:
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab3**
@@ -91,9 +117,13 @@ For Part 2: We will also create our own custom processor using ScriptProcessor t
 
 ---
  
- ## Lab 4: Build, Train, and Deploy using SageMaker Built-In-Algorithm
+ ## Lab 4: Build, Train, and Deploy using SageMaker Bring-Your-Own-Algorithm
    
- From within the notebook instance we created in Lab Setup above:
+ In this lab, we will use build,train,and deploy a model using the Bring-You-Own scenario with SageMaker which includes building a customer owned/managed container image that is compatible with SageMaker for training and hosting.   The ML use case for this lab is predicting an Iris species based on sepal/petal measurements.  For this we will use scikit-learn's decision tree algorithm. 
+
+ **Learning Objective:** Learn how to build and use SageMaker compatible container images for building, training, and hosting your ML models. 
+ 
+ **Lab Steps:** From within the notebook instance we created in Lab Setup above:
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab4**
