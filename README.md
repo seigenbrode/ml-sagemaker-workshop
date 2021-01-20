@@ -53,7 +53,7 @@
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab1**
-   3) Click **Lab1-DataExploration-Processing.ipynb** to open Lab 1
+   3) Click **xgboost_direct_marketing_sagemaker.ipynb** to open Lab 1
    4) The remaining steps for this lab are performed within the notebook instance
    ![Lab1](./images/notebook-lab1.png)
    
@@ -61,11 +61,20 @@
  
  ## Lab 2: Data Processing at Scale using SageMaker Processing
    
- From within the notebook instance we created in Lab Setup above:
+ This is a two part lab to showcase using Amazon SageMaker Processing in two different scenarios.
+ 
+ For Part 1:  We will utilize SageMaker Processing for data pre-processing using the SKLearnProcessor as well as for model evalution after training our model.  
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab2**
-   3) Click **Lab2-SageMakerProcessing.ipynb** to open Lab 2
+   3) Click **Part1-SageMakerProcessing.ipynb** to open Part 1 of Lab 2
+   4) The remaining steps for this lab are performed within the notebook instance
+
+For Part 2: We will also create our own custom processor using ScriptProcessor to demonstrate the ability to bring your own container as well
+
+   1) Go to the **Files** tab
+   2) Click **ml-sagemaker-workshop/lab2**
+   3) Click **Part2-SageMakerProcessing-DASK.ipynb** to open Part 2 of Lab 2
    4) The remaining steps for this lab are performed within the notebook instance
    
 ---
@@ -76,7 +85,7 @@
  
    1) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab3**
-   3) Click **Lab3-btd-built-in-algorithm.ipynb** to open Lab 3
+   3) Click **xgboost_customer_churn.ipynb** to open Lab 3
    4) The remaining steps for this lab are performed within the notebook instance
 
 ---
