@@ -31,7 +31,7 @@ RUN conda install --yes \
     && find /opt/conda/lib/python*/site-packages/bokeh/server/static -type f,l -name '*.js' -not -name '*.min.js' -delete \
     && rm -rf /opt/conda/pkgs
 
-RUN pip install dask-ml boto3
+RUN pip install dask-ml==1.7.0 boto3==1.16.21
 # Dumb init
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64
 RUN chmod +x /usr/local/bin/dumb-init
@@ -39,7 +39,7 @@ RUN apt-get update
 RUN apt-get install -y curl unzip python3 python3-setuptools python3-pip python-dev python3-dev python-psutil
 
 
-RUN conda install --yes s3fs -c conda-forge
+RUN conda install --yes s3fs==0.5.1 -c conda-forge
 
 
 

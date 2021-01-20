@@ -55,7 +55,7 @@
    2) Click **ml-sagemaker-workshop/lab1**
    3) Click **xgboost_direct_marketing_sagemaker.ipynb** to open Lab 1
    4) The remaining steps for this lab are performed within the notebook instance
-   ![Lab1](./images/notebook-lab1.png)
+   ![Lab1](./images/lab1.png)
    
 ---
  
