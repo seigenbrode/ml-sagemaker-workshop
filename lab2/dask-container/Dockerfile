@@ -39,7 +39,7 @@ RUN apt-get update
 RUN apt-get install -y curl unzip python3 python3-setuptools python3-pip python-dev python3-dev python-psutil
 
 
-RUN conda install --yes s3fs==0.5.1 -c conda-forge
+RUN conda install --yes s3fs==0.5.1 ca-certificates==2020.11.8 docutils==0.15.2 -c conda-forge
 
 
 
