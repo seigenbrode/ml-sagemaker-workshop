@@ -29,6 +29,7 @@
    5) Under *Notebook Instance Settings*, complete/update the following:
        * **Notebook instance name:** Enter a name for the notebook instance (Ex: sagemaker-workshop-janedoe)
        * **Notebook instance type:** ml.t3.large
+       * Toggle **Additional configuration**, enter 15 for **Volume Size in GB**
    6) Under *Permissions and encryption*, complete/update the following:
        * **IAM Role:** Create a new role --> Select 'any S3 bucket' --> Create Role
    7) Under *Git Repositories*:
