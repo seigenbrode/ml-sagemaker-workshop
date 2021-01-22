@@ -110,7 +110,24 @@ For Part 2: We will also create our own custom processor using ScriptProcessor t
  
  **Lab Steps:** From within the notebook instance we created in Lab Setup above:
  
-   1) Go to the **Files** tab
+   1) Download any updated code from this repository:
+
+      a. Go to **New** in  the upper right hand corner and scroll down to select **Terminal**
+
+      ![Code](./images/codepull1.png)
+
+      b. Copy/paste the following commands into the terminal:
+
+          cd SageMaker/ml-sagemaker-workshop
+
+          git fetch
+
+          git checkout origin/main -- lab3/xgboost_customer_churn.ipynb
+
+      ![Code](./images/codepull2.png)
+
+      b. Return back to your main Jupyter tab
+   2) Go to the **Files** tab
    2) Click **ml-sagemaker-workshop/lab3**
    3) Click **xgboost_customer_churn.ipynb** to open Lab 3
    4) The remaining steps for this lab are performed within the notebook instance
